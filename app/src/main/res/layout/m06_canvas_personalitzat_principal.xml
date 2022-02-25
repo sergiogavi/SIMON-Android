@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".M06_CanvasPersonalitzat">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/m06_canvas_personalitzat_contingut" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#E91E63"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="210dp"
+        app:backgroundTint="#EEE"
+         />
+    <Button
+        android:id="@+id/bt_rojo"
+        android:layout_width="200dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="140dp"
+        android:shadowColor="#FF0000"
+        android:text=""
+        android:background="#FFFF0000"
+        app:backgroundTint="#F44336"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/bt_amarillo"
+        android:layout_width="200dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="140dp"
+        android:shadowColor="#FFEB3B"
+        android:text=""
+        android:background="#FFEB3B"
+        app:backgroundTint="#FFEB3B"
+        android:layout_marginLeft="200dp"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/bt_azul"
+        android:layout_width="200dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="390dp"
+        android:shadowColor="#0000FF"
+        android:text=""
+        android:background="#0000FF"
+        app:backgroundTint="#0000FF"
+        android:layout_marginLeft="195dp"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/bt_verde"
+        android:layout_width="200dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="390dp"
+        android:shadowColor="#00FF00"
+        android:text=""
+        android:background="#00FF00"
+        app:backgroundTint="#00FF00"
+        android:layout_marginLeft="0dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtaleatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:text="Aleatorio" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
